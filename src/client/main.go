@@ -53,7 +53,7 @@ func start(l *log.Logger, idx int, wg *sync.WaitGroup, addr string) {
 			panic("read fail")
 		}
 
-		l.Printf("%s\n", string(buf[:n]))
+		l.Printf("[reply] %s\n", string(buf[:n]))
 		time.Sleep(1 * time.Second)
 	}
 }
