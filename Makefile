@@ -2,9 +2,9 @@ export GOPATH = $(PWD)
 export CONFPATH = $(GOPATH)/conf
 export PATH := $(PATH):$(GOPATH)/bin
 
-.PHONY: clean ex1 ex2
+.PHONY: clean ex1 ex2 ex3
 
-all: client ex1 ex2
+all: client ex1 ex2 ex3
 
 ex1:
 	go install ex1
